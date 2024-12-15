@@ -14,13 +14,6 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-// Importa la función `m` de "framer-motion", una biblioteca para animaciones.
-// Nota: en este código no se utiliza `m`, por lo que podría eliminarse si no es necesario.
-import { m } from "framer-motion";
-
-// Importa React para usar JSX y crear componentes.
-import React from "react";
-
 // Importa el tipo Meal, que define la estructura de datos de una comida.
 import { Meal } from "../types";
 

@@ -1,7 +1,6 @@
 // Importa los componentes necesarios de Chakra UI, un tipo personalizado "Category" y una utilidad de color de Framer Motion.
 import { Link, Heading, VStack, SkeletonText } from "@chakra-ui/react";
 import { Category } from "../types";
-import { color } from "framer-motion";
 
 // Define el tipo de las propiedades que el componente SideNav espera recibir.
 type Props = {

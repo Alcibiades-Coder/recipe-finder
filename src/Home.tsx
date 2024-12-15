@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom"; // Importa el componente Link para navegar entre rutas
 import SplitWithImage from "./components/SplitWithImage"; // Componente personalizado para mostrar contenido dividido con una imagen
 import { Text, Box, SimpleGrid } from "@chakra-ui/react"; // Importación de componentes de diseño de Chakra UI

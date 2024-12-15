@@ -1,5 +1,3 @@
-import React from "react"; // Importación de React
-
 // Definición de un tipo de propiedades vacío, ya que este componente no recibe props
 type Props = {};
 

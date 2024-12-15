@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import SideNav from "./components/SideNav";
 import MainContent from "./components/MainContent";
 import { useState, useEffect } from "react";
-
 import { Category, Meal, MealDetails, SearchForm } from "./types";
 import useHttpData from "./hooks/useHttpData";
 import axios from "axios";

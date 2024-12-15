@@ -1,4 +1,3 @@
-import React from "react";
 import { createRoot } from "react-dom/client"; // Importa la función para renderizar el componente raíz en el DOM
 import { BrowserRouter, Routes, Route } from "react-router-dom"; // Importa herramientas para manejar rutas y navegación
 import { ChakraProvider } from "@chakra-ui/react"; // Proveedor para usar componentes y estilos de Chakra UI

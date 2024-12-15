@@ -1,6 +1,3 @@
-// Importa React para usar JSX y crear componentes.
-import React from "react";
-
 // Importa el tipo MealDetails, que define la estructura de datos de una comida.
 import { MealDetails } from "../types";
 

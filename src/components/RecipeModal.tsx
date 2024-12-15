@@ -2,18 +2,12 @@
 // - Modal: componente principal para construir modales.
 // - ModalOverlay: fondo semitransparente detrás del modal.
 // - ModalContent: contenedor principal del contenido del modal.
-// - ModalHeader: encabezado del modal.
-// - ModalCloseButton: botón para cerrar el modal.
-// - ModalBody: área para contenido principal del modal.
 // - ModalFooter: área para botones o acciones en la parte inferior del modal.
 // - Button: componente para crear botones.
 import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
-  ModalCloseButton,
-  ModalBody,
   ModalFooter,
   Button,
 } from "@chakra-ui/react";

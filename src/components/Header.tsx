@@ -10,7 +10,6 @@ import {
   InputGroup,
   InputLeftElement,
   Input,
-  InputRightElement,
   Container,
   Button,
   Box,

@@ -1,6 +1,5 @@
 // Importa los componentes necesarios de Chakra UI y React.
 import { Card, CardBody, SkeletonText } from "@chakra-ui/react";
-import React from "react";
 
 // Define los tipos de las propiedades que aceptará el componente. En este caso, no se reciben propiedades.
 type Props = {};

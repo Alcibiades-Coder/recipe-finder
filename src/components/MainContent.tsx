@@ -1,28 +1,9 @@
-// Importa React para usar JSX y crear componentes.
-import React from "react";
-
 // Importa el tipo `Meal`, que define la estructura de datos de una comida.
 import { Meal } from "../types";
 
 // Importa componentes de "@chakra-ui/react" para estructurar y estilizar:
-// - Image: para mostrar imágenes.
-// - Card, CardBody, CardFooter: para construir y organizar tarjetas.
-// - Text: para mostrar texto simple.
-// - Heading: para mostrar encabezados.
-// - Button: para añadir botones.
 // - SimpleGrid: para crear una cuadrícula flexible y responsive.
-// - Skeleton: para mostrar estados de carga.
-import {
-  Image,
-  Card,
-  CardBody,
-  Text,
-  Heading,
-  Button,
-  CardFooter,
-  SimpleGrid,
-  Skeleton,
-} from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 
 // Importa el componente `MealCard`, que muestra una tarjeta con la información de una comida.
 import MealCard from "./MealCard";

@@ -2,7 +2,6 @@
 // - Container: un contenedor genérico para organizar elementos.
 // - SkeletonText: un componente que muestra un estado de carga en forma de líneas esqueléticas.
 import { Container, SkeletonText } from "@chakra-ui/react";
-import React from "react";
 
 // Define el tipo de las propiedades del componente como vacío (Props no recibe datos).
 type Props = {};
