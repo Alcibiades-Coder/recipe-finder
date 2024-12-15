@@ -78,11 +78,7 @@ export default function SplitWithImage() {
                 <Icon as={MdImageSearch} color={"yellow.500"} w={5} h={5} />
               }
               iconBg={useColorModeValue("yellow.100", "yellow.900")}
-              text={
-                <Text color={"green.500"} fontWeight="bold">
-                  Navega por las Recetas
-                </Text>
-              }
+              text="Navega por las Recetas"
             />
             <Feature
               icon={
@@ -94,20 +90,12 @@ export default function SplitWithImage() {
                 />
               }
               iconBg={useColorModeValue("green.100", "green.900")}
-              text={
-                <Text color={"green.500"} fontWeight="bold">
-                  Busca por Categorias
-                </Text>
-              }
+              text="Busca por Categorias"
             />
             <Feature
               icon={<Icon as={FaSearch} color={"purple.500"} w={5} h={5} />}
               iconBg={useColorModeValue("purple.100", "purple.900")}
-              text={
-                <Text color={"green.500"} fontWeight="bold">
-                  Ocupa el Buscador
-                </Text>
-              }
+              text="Ocupa el Buscador"
             />
           </Stack>
         </Stack>
