@@ -36,7 +36,9 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
       >
         {icon}
       </Flex>
-      <Text fontWeight={600}>{text}</Text>
+      <Text color="green.500" fontWeight={600}>
+        {text}
+      </Text>
     </Stack>
   );
 };
