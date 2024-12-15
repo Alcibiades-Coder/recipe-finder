@@ -17,7 +17,7 @@ import {
 import { FaCheck } from "react-icons/fa";
 
 // Datos de ejemplo que se pueden reemplazar por los propios datos
-const features = Array.apply(null, Array(8)).map(function (x, i) {
+const features = Array.apply(null, Array(8)).map(function (_x, i) {
   return {
     id: i, // Identificador único para cada característica
     title: "Lorem ipsum dolor sit amet", // Título de la característica
