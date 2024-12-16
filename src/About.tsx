@@ -17,7 +17,7 @@ function Home() {
       >
         {/* Logotipo del buscador de recetas */}
         <img
-          src="../public/bowl.svg" // Ruta de la imagen del logotipo
+          src="/bowl.svg" // Ruta corregida de la imagen del logotipo
           alt="Logo del Finder" // Texto alternativo para accesibilidad
           style={{
             width: "5%", // Ajusta el tamaño de la imagen al 5% del ancho del contenedor
@@ -50,7 +50,7 @@ function Home() {
         alignItems="center" // Centra el contenido horizontalmente
         justifyContent="center" // Centra el contenido verticalmente
       >
-        <nav>
+        <nav aria-label="Navegación principal">
           {/* Enlace para navegar a la página principal */}
           <Link to="/" style={{ color: "white", marginRight: "10px" }}>
             Home

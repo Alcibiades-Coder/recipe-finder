@@ -30,8 +30,7 @@ interface FeatureProps {
 const Feature = ({ text, icon, iconBg }: FeatureProps) => {
   return (
     <Stack direction={"row"} align={"center"}>
-      {" "}
-      // Disposición en fila para alinear el icono y el texto
+      {/* Disposición en fila para alinear el icono y el texto */}
       <Flex
         w={8} // Ancho del icono
         h={8} // Altura del icono
@@ -40,12 +39,11 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
         rounded={"full"} // Hace que el icono tenga bordes redondeados (circular)
         bg={iconBg} // Color de fondo del icono
       >
-        {icon} // Renderiza el icono pasado como prop
+        {icon} {/* Renderiza el icono pasado como prop */}
       </Flex>
       <Text color="green.500" fontWeight={600}>
-        {" "}
-        // Texto en color verde con peso de fuente 600
-        {text} // Muestra el texto de la característica
+        {/* Texto en color verde con peso de fuente 600 */}
+        {text} {/* Muestra el texto de la característica */}
       </Text>
     </Stack>
   );
@@ -55,15 +53,14 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
 export default function SplitWithImage() {
   return (
     <Container maxW={"5xl"} py={12}>
-      {" "}
-      // Contenedor con un ancho máximo de '5xl' y padding vertical
+      {/* Contenedor principal con un ancho máximo de '5xl' y padding vertical de 12 */}
+
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-        {" "}
-        // Cuadrícula sencilla con 1 columna en pantallas pequeñas y 2 en
-        medianas y grandes
+        {/* Creación de una cuadrícula sencilla con 1 columna en pantallas pequeñas y 2 columnas en pantallas medianas */}
+
         <Stack spacing={4}>
-          {" "}
-          // Pila de elementos con espaciado entre ellos
+          {/* Pila de elementos con espaciado de 4 */}
+
           <Text
             textTransform={"uppercase"} // Convierte el texto a mayúsculas
             color={"white"} // Color blanco para el texto
@@ -74,25 +71,28 @@ export default function SplitWithImage() {
             alignSelf={"flex-start"} // Alinea el texto al inicio de la pila
             rounded={"md"} // Bordes redondeados
           >
-            Buscador de Recetas // Título estático para la sección
+            Buscador de Recetas {/* Título en mayúsculas y fondo verde */}
           </Text>
+
           <Heading color="green.500">
-            {" "}
-            // Encabezado en color verde Un Buscador de Recetas de Cocina en
-            Base a la API The Meal DB
+            Buscador de Recetas
+            {/* Título principal en color verde */}
           </Heading>
+
           <Text color={"green.300"} fontSize={"lg"}>
-            {" "}
-            // Descripción en color verde claro y tamaño de fuente grande Lorem
-            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            eirmod tempor invidunt ut labore
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quibusdam error incidunt sit itaque illum distinctio praesentium
+            nostrum consequatur eaque placeat quam minus voluptatum, aliquam,
+            saepe facilis, cupiditate delectus impedit.
+            {/* Texto descriptivo */}
           </Text>
+
           <Stack
             spacing={4} // Espaciado entre los elementos dentro de la pila
             divider={
               // Divide cada elemento con una línea
               <StackDivider
-                borderColor={useColorModeValue("green.100", "gr.700")} // Color de la línea divisoria, cambia con el modo de color
+                borderColor={useColorModeValue("green.100", "green.700")} // Color de la línea divisoria, cambia con el modo de color
               />
             }
           >
@@ -104,6 +104,7 @@ export default function SplitWithImage() {
               iconBg={useColorModeValue("yellow.100", "yellow.900")} // Fondo amarillo que cambia según el modo de color
               text="Navega por las Recetas" // Texto de la característica
             />
+
             <Feature
               icon={
                 <Icon
@@ -116,6 +117,7 @@ export default function SplitWithImage() {
               iconBg={useColorModeValue("green.100", "green.900")}
               text="Busca por Categorias" // Texto de la característica
             />
+
             <Feature
               icon={<Icon as={FaSearch} color={"purple.500"} w={5} h={5} />} // Icono de búsqueda con color morado
               iconBg={useColorModeValue("purple.100", "purple.900")}
@@ -123,12 +125,12 @@ export default function SplitWithImage() {
             />
           </Stack>
         </Stack>
+
         <Flex>
-          {" "}
-          // Componente Flex para alinear el contenido de manera flexible
+          {/* Contenedor flexible para la imagen */}
           <Image
             rounded={"md"} // Bordes redondeados para la imagen
-            alt={"feature image"} // Texto alternativo de la imagen
+            alt={"Imagen destacada de características"} // Texto alternativo de la imagen más descriptivo
             src={"../../public/MainMeal.jpg"} // Ruta de la imagen a mostrar
             objectFit={"cover"} // Hace que la imagen cubra el contenedor sin deformarse
           />
