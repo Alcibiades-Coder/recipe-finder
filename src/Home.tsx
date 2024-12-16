@@ -17,7 +17,7 @@ function Home() {
       >
         {/* Muestra un logotipo de un bol */}
         <img
-          src="../public/bowl.svg" // Ruta de la imagen
+          src="./src/images/bowl.svg" // Ruta de la imagen
           alt="Logo del Finder" // Texto alternativo para accesibilidad
           style={{
             width: "5%", // Tamaño de la imagen como porcentaje del ancho del contenedor

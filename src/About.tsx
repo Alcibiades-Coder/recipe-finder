@@ -17,7 +17,7 @@ function Home() {
       >
         {/* Logotipo del buscador de recetas */}
         <img
-          src="/bowl.svg" // Ruta corregida de la imagen del logotipo
+          src="./src/images/bowl.svg" // Ruta corregida de la imagen del logotipo
           alt="Logo del Finder" // Texto alternativo para accesibilidad
           style={{
             width: "5%", // Ajusta el tamaño de la imagen al 5% del ancho del contenedor
