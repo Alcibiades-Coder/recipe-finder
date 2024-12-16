@@ -60,7 +60,7 @@ function Header({ onSubmit }: Props) {
             <Link to="/">
               <Box
                 as="img"
-                src="./src/images/bowl.svg" // Ruta al logo de la aplicación.
+                src="/bowl.svg" // Ruta al logo de la aplicación.
                 alt="Logo" // Texto alternativo para accesibilidad.
                 boxSize="40px" // Tamaño de la imagen.
                 mr={3} // Margen derecho.

@@ -131,7 +131,7 @@ export default function SplitWithImage() {
           <Image
             rounded={"md"} // Bordes redondeados para la imagen
             alt={"Imagen destacada de características"} // Texto alternativo de la imagen más descriptivo
-            src={"../../public/MainMeal.jpg"} // Ruta de la imagen a mostrar
+            src={"/MainMeal.jpg"} // Ruta de la imagen a mostrar
             objectFit={"cover"} // Hace que la imagen cubra el contenedor sin deformarse
           />
         </Flex>
