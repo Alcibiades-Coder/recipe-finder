@@ -1,50 +1,91 @@
-# React + TypeScript + Vite
+# Recipe Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Recipe Finder es una aplicación web desarrollada con React, TypeScript y Vite que permite a los usuarios explorar una amplia variedad de recetas utilizando la API pública [The Meal DB](https://www.themealdb.com/). 
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Uso de Vite**: Rápido y moderno generador de proyectos.
+- **Componentes funcionales**: Organización modular del código.
+- **Consumo de API pública**: Integración con The Meal DB para obtener datos de recetas.
+- **Rutas dinámicas**: Navegación con React Router.
+- **Gestión de estado con Hooks**: Uso de `useEffect` para manejar procesos asíncronos.
+- **Error Boundaries**: Manejo de errores en la interfaz.
+- **Estilos modernos**: Implementación de Chakra UI para diseño responsivo.
+- **Tecnologías utilizadas**: Desarrollo en TypeScript, React + Vite, Axios y Chakra UI.
 
-## Expanding the ESLint configuration
+## Requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js (v16 o superior)
+- NPM
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/Alcibiades-Coder/recipe-finder.git
+   ```
+
+2. Accede al directorio del proyecto:
+   ```bash
+   cd recipe-finder
+   ```
+
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+5. Abre tu navegador y visita `http://localhost:5173`.
+
+## Uso
+
+1. Explora recetas desde la página principal.
+2. Usa la barra de búsqueda para encontrar recetas específicas.
+3. Haz clic en una receta para ver más detalles, como ingredientes y pasos.
+
+## Estructura del Proyecto
+
+```
+recipe-finder/
+├── src/
+│   ├── components/    # Componentes reutilizables
+│   ├── pages/         # Páginas principales
+│   ├── routes/        # Configuración de rutas
+│   ├── styles/        # Estilos globales con Chakra UI
+│   └── utils/         # Funciones auxiliares
+├── public/            # Archivos estáticos
+├── package.json       # Configuración de dependencias
+└── README.md          # Documentación
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contribuciones
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+¡Las contribuciones son bienvenidas! Por favor, sigue estos pasos:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Haz un fork del repositorio.
+2. Crea una rama para tu característica o corrección:
+   ```bash
+   git checkout -b nombre-rama
+   ```
+3. Realiza tus cambios y haz commits claros:
+   ```bash
+   git commit -m "Descripción de los cambios"
+   ```
+4. Envía un pull request a este repositorio.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más información.
+
+## Recursos
+
+- [The Meal DB API](https://www.themealdb.com/)
+- [Documentación de React](https://reactjs.org/)
+- [Guía de Vite](https://vitejs.dev/)
+- [Chakra UI](https://chakra-ui.com/)
+
