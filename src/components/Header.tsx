@@ -48,51 +48,40 @@ function Header({ onSubmit }: Props) {
     // - `maxW="3xl"`: establece un ancho máximo de "3xl".
     // - `mt={1}`: añade un margen superior de 1.
     <Container maxW="3xl" mt={1}>
-      {/* Formulario principal:
-          - `onSubmit`: maneja el envío del formulario utilizando `handleSubmit` de react-hook-form. */}
       <form onSubmit={handleSubmit(onSubmit)}>
-        {/* Contenedor flexible para alinear los elementos horizontalmente. */}
         <Flex alignItems="center">
-          {/* Sección izquierda con el logo y texto de introducción. */}
           <Flex alignItems="center" mr={4}>
-            {/* Enlace al inicio de la aplicación:
-                - Contiene un logo (imagen) con un efecto hover (escala y puntero). */}
             <Link to="/">
               <Box
                 as="img"
-                src="/bowl.svg" // Ruta al logo de la aplicación.
-                alt="Logo" // Texto alternativo para accesibilidad.
-                boxSize="40px" // Tamaño de la imagen.
-                mr={3} // Margen derecho.
+                src="/bowl.svg"
+                alt="Logo"
+                boxSize="40px"
+                mr={{ base: "6", md: "3" }} // Más margen en dispositivos móviles
                 _hover={{
-                  cursor: "pointer", // Cambia el cursor al pasar el mouse.
-                  transform: "scale(1.1)", // Escala la imagen un 10% al pasar el mouse.
+                  cursor: "pointer",
+                  transform: "scale(1.1)",
                 }}
               />
             </Link>
 
-            {/* Texto de introducción:
-                - Mensaje que invita al usuario a buscar recetas. */}
-            <Text color="white" fontWeight="bold" fontSize="lg">
+            <Text
+              color="white"
+              fontWeight="bold"
+              fontSize="lg"
+              display={{ base: "none", md: "block" }} // Ocultar texto en móviles
+            >
               Encuentra tus recetas favoritas
             </Text>
           </Flex>
 
-          {/* Grupo de entrada (campo de búsqueda y botón). */}
           <InputGroup flex="1">
-            {/* Ícono de búsqueda a la izquierda del campo de texto. */}
             <InputLeftElement pointerEvents="none">
               <IoMdSearch color="white" />
             </InputLeftElement>
 
-            {/* Campo de entrada de texto:
-                - `focusBorderColor`: cambia el color del borde al enfocarse.
-                - `isInvalid`: aplica estilos de error si la validación falla.
-                - `register`: registra este campo en el formulario, con validación requerida.
-                - `placeholder`: texto de ejemplo en el campo.
-                - `_placeholder`: estilo personalizado para el texto del placeholder. */}
             <Input
-              mr="3" // Margen derecho.
+              mr="3"
               focusBorderColor={
                 !!formState.errors.search ? "crimson" : "green.700"
               }
@@ -104,8 +93,6 @@ function Header({ onSubmit }: Props) {
               _placeholder={{ color: "white" }}
             />
 
-            {/* Botón de búsqueda:
-                - Ejecuta la función `onSubmit` al enviar el formulario. */}
             <Button color="white" type="submit" bgColor="green.800">
               Buscar
             </Button>
