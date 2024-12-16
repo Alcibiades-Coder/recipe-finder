@@ -80,10 +80,9 @@ export default function SplitWithImage() {
           </Heading>
 
           <Text color={"green.300"} fontSize={"lg"}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            quibusdam error incidunt sit itaque illum distinctio praesentium
-            nostrum consequatur eaque placeat quam minus voluptatum, aliquam,
-            saepe facilis, cupiditate delectus impedit.
+            Recipe Finder es una aplicación web desarrollada con React,
+            TypeScript y Vite que permite a los usuarios explorar una amplia
+            variedad de recetas utilizando la API pública The Meal DB.
             {/* Texto descriptivo */}
           </Text>
 
